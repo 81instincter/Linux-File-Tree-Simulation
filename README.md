@@ -39,7 +39,7 @@ A command-line **File System Simulator** built in C++ that demonstrates tree dat
 
 ### Build & Run
 
-```bash
+```Bash
 # Clone the repo
 git clone <your-repo-url>
 cd filesystem-simulator
@@ -49,3 +49,65 @@ make main
 
 # Run the simulator
 ./main
+```
+
+## Example Session
+```Bash
+$ mkdir projects
+$ cd projects
+/root/projects
+$ touch main.cpp
+$ ls
+f main.cpp
+$ mkdir tests
+$ pwd
+/root/projects
+$ cd ..
+/root
+$ rm projects
+projects removed successfully
+$ exit
+```
+
+## 🧪 Testing
+```Bash
+# Run all tests
+make test-all
+
+# Build and run sample execution
+make test-run
+```
+
+## 📁 Project Structure
+```
+filesystem-simulator/
+├── src/                    # Source files
+│   ├── main.cpp
+│   ├── terminal.*
+│   ├── filesystem.*
+│   └── node.*
+├── test/                   # Unit tests (Catch2)
+├── Makefile
+└── README.md
+```
+
+## 🎯 What This Demonstrates
+- **Advanced Data Structures:** Custom tree implementation with dynamic children
+- **OOP Principles:** Encapsulation, inheritance-ready design, RAII
+- **Memory Management:** Manual allocation/deallocation with destructors and recursive cleanup
+- **Recursion:** Deep deletion of directory trees
+- **Command Parsing:** Input handling and argument validation
+- **Modular Design:** Clean separation of concerns (Node, FileSystem, Terminal)
+
+## 📚 Learning Outcomes
+This project strengthened my understanding of:
+
+- Tree traversals and hierarchical data
+- Pointer management in C++
+- Recursive algorithms
+- Building maintainable command-line tools
+
+Feel free to explore the code and run the simulator!
+
+## 📄 License
+This project is open-sourced under the MIT License.
