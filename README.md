@@ -6,8 +6,6 @@
 
 A command-line **File System Simulator** built in C++ that demonstrates tree data structures, object-oriented design, recursion, and memory management. It mimics core Linux file system commands (`ls`, `cd`, `mkdir`, `touch`, `rm`, `mv`, `pwd`) using a custom tree-based structure.
 
-**Perfect for showcasing data structures and systems programming skills to recruiters.**
-
 ## ✨ Features
 
 - **Tree-based File System**: Nodes represent files (`f`) and directories (`d`) with parent-child relationships
